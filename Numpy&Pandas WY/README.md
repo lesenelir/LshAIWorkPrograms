@@ -16,4 +16,6 @@ numpy版本 1.16.4
    
 ### ndarray创建
     np.arange(num).reshape(乘积为num)
-    np.random.randn()     
+    np.random.randn()    
+    
+###  ndarray操作
