@@ -16,6 +16,15 @@ numpy版本 1.16.4
    
 ### ndarray创建
     np.arange(num).reshape(乘积为num)
-    np.random.randn()    
+    np.random.randn()  满足正太分布
+    np.random.randint(num1, num2, size=(,..))  
     
-###  ndarray操作
+###  ndarray合并
+    给已有数据添加行，比如，增添一些样本数据 np.concatenate([array1, array2])
+    给已有数据添加列，比如，增添一些特征 np.concatenate([array1, array2], axis=1)
+    Notes：
+        添加行保证列数一致
+        添加列保证行数一致
+        axis=0 按照行向
+        axis=1 按照列向
+    
