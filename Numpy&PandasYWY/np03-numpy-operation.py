@@ -12,7 +12,7 @@ print(a[:, 2])  # first step: select all row and then, select col numbers
 print('----------------')
 
 # 合并
-# merge row data operation
+# merge row data array operation
 data1 = np.arange(6).reshape(2, 3)
 data2 = np.random.randint(10, 20, size=(4, 3))
 print(data1)
@@ -35,3 +35,14 @@ print(np.concatenate([array1, array2], axis=1))
 print(np.hstack([array1, array2]))
 # method three: np.column_stack([array1, array2])
 print(np.column_stack([array1, array2]))
+
+print('----------------')
+
+# 分割
+# split data array operation
+A = np.arange(20).reshape(4, 5)
+print(A)
+C = np.split(A, 2)  # 平均分割
+print(C)
+D = np.array_split(A, 3, axis=0) # 不平均分割
+print(D)
