@@ -23,12 +23,24 @@ df2 = pd.DataFrame({
 })
 print(df2)
 
-# 3.use concat function to merge dataframe
+# 3.another method to create pandas dataframe
+dataframe = pd.DataFrame(
+    [
+        [11, 12.2, 13],
+        [12, 19.2, 14],
+        [13, 18.2, 15],
+        [14, 17.2, 16],
+    ],
+    columns=["feature_a", "feature_b", "feature_c"],
+)
+print(dataframe)
+
+# 4.use concat function to merge dataframe
 print(pd.concat([df1, df2]))
 # join参数默认是outer join此时包含所有的行列，innerjoin会过滤合并dataframe共同没有的行列
 print(pd.concat([df1, df2], ignore_index=True, join='inner'))
 
-# 4.add columns
+# 5.add columns
 # add one column
 s1 = pd.Series(list(range(4)), name='F')
 print(pd.concat([df1, s1], axis=1))
@@ -37,7 +49,7 @@ s2 = df1.apply(lambda x: x['A'] + '_GG', axis=1)
 print(s2)
 print(pd.concat([df1, s1, s2], axis=1))
 
-# 5.use append function to merge dataframe rows
+# 6.use append function to merge dataframe rows
 dataf1 = pd.DataFrame([[1, 2], [3, 4]], columns=list('AB'))
 print(dataf1)
 dataf2 = pd.DataFrame([[5, 6], [7, 8]], columns=list('AB'))

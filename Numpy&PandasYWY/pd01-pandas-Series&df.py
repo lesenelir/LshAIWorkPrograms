@@ -33,6 +33,7 @@ print('-------------------------')
 
 # 3.DataFrame
 # 3.1 create dataframe from python dictionary
+# 通过字典生成pandas的Series和DataFrame区别在于，Series字典value是值，DataFrame字典value是列表
 data = {
     'state': ['ohio', 'ohio', 'nevada'],
     'year': [2000, 2001, 2002],

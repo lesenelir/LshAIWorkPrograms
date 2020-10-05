@@ -73,5 +73,11 @@ ________________________________________________________________________________
         特例：append方法
             DataFrame.append(other, ignore_index=False)
             append只有按行合并，没有按列合并，相当于concat的简写
-                
+
+### pandas和numpy相互转换
+    pandas转换成numpy数组：
+        .values
+        .to_numpy()
+    应用场景：SKLearn模型输入的就是numpy数组，可以用pandas对原始数据做大量处理后，将结果转换成numpy作输入
+                    
     
