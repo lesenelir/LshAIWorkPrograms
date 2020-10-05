@@ -1,6 +1,7 @@
 numpy版本 1.16.4
+pands版本 0.25.0
 
-### introduce
+### numpy intro
     NumPy包的核心是 ndarray 对象，它封装了python原生的同数据类型的 n 维数组。
 
 ### ndarray知识
@@ -27,4 +28,24 @@ numpy版本 1.16.4
         添加列保证行数一致
         axis=0 按照行向
         axis=1 按照列向
+        
+__________________________________________________________________________________________
+
+### pandas intro
+    pandas有容易使用的数据结构和数据分析工具
+    Pandas 的主要数据结构是 Series（一维数据）与 DataFrame（二维数据）
+    Series:
+        一维数据，代表一行或者一列。由一组数据（不同数据类型）以及一组与之相关的数据标签（索引）组成
+    DataFrame:
+        二维数据，整个表格，多行多列。df.index & df.columns
+        DataFrame可以看作由Series组成的字典
+        
+    
+### pandas读取数据
+    pandas读取表格类型数据：
+        csv tsv txt : pd.read_csv
+        excel : pd.read_excel
+        mysql : pd.read_sql
+        
+        
     
