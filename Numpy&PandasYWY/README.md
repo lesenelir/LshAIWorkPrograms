@@ -61,5 +61,17 @@ ________________________________________________________________________________
     Notes：
         注意降维 dataframe > series > data
         
-        
+### pandas 添加合并concat  
+    concat：使用某种合并方式join，沿着某个轴向axis，把多个pandas对象（dataframe或series合并成一个）
+    pandas.concat(objs, asix=0, join='outer', ignore_index=False)
+    objs：列表，可以是Series 也可以是DataFrame
+    asix：0代表按行合并，1代表按列合并
+    join：合并时对齐方式，默认是outer join 也可以是 inner join
+    ignore_index：是否忽略原来的数据索引
+    
+    Notes:
+        特例：append方法
+            DataFrame.append(other, ignore_index=False)
+            append只有按行合并，没有按列合并，相当于concat的简写
+                
     
