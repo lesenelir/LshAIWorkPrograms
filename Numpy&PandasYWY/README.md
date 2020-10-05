@@ -46,6 +46,20 @@ ________________________________________________________________________________
         csv tsv txt : pd.read_csv
         excel : pd.read_excel
         mysql : pd.read_sql
+
+### pandas 查询数据
+    df.loc 根据行列的标签值查询【推荐】
+        使用单个label值查询数据
+        使用值列表批量查询
+        使用数值区间进行范围查询
+        使用条件表达式查询
+        使用函数查询
+    df.iloc 根据行列的数字位置查询
+    df.where
+    df.query
+    
+    Notes：
+        注意降维 dataframe > series > data
         
         
     

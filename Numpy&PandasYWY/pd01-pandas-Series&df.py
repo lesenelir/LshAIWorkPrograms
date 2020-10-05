@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 # pandas dataframe and Series
 
@@ -48,3 +49,10 @@ print(df.index)
 print(df['year'])
 # select multi-cols return pd.DataFrame
 print(df[['year', 'pop']])
+
+# 4. use numpy with create pandas
+array1 = np.array([1, 2, 3])
+data1 = pd.Series(array1)
+print(data1)
+print(data1.index)
+print(data1.values)
