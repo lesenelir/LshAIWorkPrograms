@@ -16,7 +16,7 @@ print(type(target))
 print(data.shape)  # (506, 13) 506行 13列
 print(target.shape)  # (506,) target一维数组 506条 13个特征
 
-# show the first three home feature information & target(price) information
+# show the first three hed3ome feature information & target(price) information
 print(data[:3])
 print(target[:3])
 
