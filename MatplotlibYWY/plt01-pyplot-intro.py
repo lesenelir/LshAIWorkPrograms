@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 
+# plot operation
+
+# prepare x y values
 x1 = [1, 2, 3]
 y1 = [5, 7, 4]
 
